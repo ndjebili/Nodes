@@ -4,7 +4,7 @@
     template< class T >
     class Node {
     public:
-        template<class U>friend class MyList;
+
         Node(const T& theData, Node<T>* theLink)
                     : data(theData), link(theLink){}
         Node<T>* getLink( ) const { return link; }
@@ -27,20 +27,6 @@
 
 
 
-    template <class U>
-    class MyList{
-
-    public:
-        void insertHead(U theData);
-        U deleteHead();
-        bool search(U &target);
-        void display();
-    private:
-        Node<U> *head;
-
-
-
-    };
 
 
 
